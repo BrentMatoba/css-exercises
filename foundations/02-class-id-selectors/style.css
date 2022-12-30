@@ -1,19 +1,21 @@
-p {
+.pink-verdana {
     background-color: #FA8072;
+    font-family: Verdana, Dejavu Sans, sans-serif;
 }
 
 #number-two {
     color: #0000FF;
-    font-size: 35px;
+    font-size: 36px;
 }
 /* Gives style to Number 2*/
 
 .font-medium {
-    font-size: 23px;
+    font-size: 24px;
 }
 /*Increases font size*/
 
 #bold {
-    font-weight: 600;
+    font-weight: 700;
+    background-color: #90ee90;
 }
     
