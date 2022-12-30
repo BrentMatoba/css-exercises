@@ -1,7 +1,19 @@
 p {
     background-color: #FA8072;
 }
+
 #number-two {
     color: #0000FF;
-    font-size: xx-large;
+    font-size: 35px;
 }
+/* Gives style to Number 2*/
+
+.font-medium {
+    font-size: 23px;
+}
+/*Increases font size*/
+
+#bold {
+    font-weight: 600;
+}
+    
