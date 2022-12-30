@@ -1,0 +1,16 @@
+.both {
+    font-size: 28px;
+    font-family: 'Times New Roman', Helvetica, sans-serif;
+}
+/*Sets font size/type for both buttons*/
+
+#first {
+    background-color: black;
+    color: white;
+}
+/*Styles button 1*/
+
+#second{
+    background-color: yellow;
+}
+
