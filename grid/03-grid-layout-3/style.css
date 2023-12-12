@@ -9,6 +9,7 @@
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(9, 100px);
+  gap:5px;
 }
 
 .container div {
@@ -66,6 +67,9 @@
 .article {
   background-color: #bccbde;
   grid-column: 3/10;
+  grid-row:3/10;
+  display:grid;
+  grid-template-columns: repeat(6, 16.67%); /*this needs to be changed to be dynamic*/
 }
 
 .article p {
@@ -94,6 +98,8 @@
 
 .footer {
   background-color: #393f4d;
+  grid-column: 1/10;
+  grid-row:10;
 }
 
 .footer p {
