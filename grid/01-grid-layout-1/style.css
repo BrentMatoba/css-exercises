@@ -9,8 +9,9 @@ body, html {
   padding: 16px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(9, 10fr);
+  grid-template-columns: repeat(9, 150px);
   grid-template-rows: repeat(9, 100px);
+  gap: 15px;
 }
 
 .container div {
@@ -36,10 +37,13 @@ body, html {
 .nav {
   background-color: #00DDFF;
   grid-column: 3/10;
+  
 }
 
 .article {
   background-color: #bccbde;
+  grid-row: 3/8;
+  grid-column: 3/10;
 }
 
 .article p {
@@ -51,4 +55,5 @@ body, html {
 
 .footer {
   background-color: #393f4d;
+  grid-column: 1/10;
 }
