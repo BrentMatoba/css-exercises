@@ -5,9 +5,9 @@
 
 .container {
   text-align: center;
-
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(9, 1fr); /*In the future, either make this a :root variable or make more columns/rows. Its much easier
+  to multiply the used grids by 2 then to go back and add more columns once you need them.*/ 
   grid-template-rows: repeat(9, 100px);
   gap:5px;
 }
@@ -24,17 +24,23 @@
   background-color: #393f4d;
   grid-column: 1/10;
   grid-row: 1;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
 }
 
-.menu ul,
+.menu ul
 .menu li {
   font-size: 16px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
 }
 
 .sidebar {
   background-color: #FF7755;
   grid-column:1/3;
-  grid-row: 2/4;
+  grid-row: 2/10;
+  display: grid;
+  gap: 50px;
 }
 
 .sidebar .photo {
@@ -43,6 +49,9 @@
   font-size: 12px;
   font-weight: normal;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -51,12 +60,23 @@
   color: black;
   font-size: 16px;
   font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 
 .nav {
   background-color: #FF7755;
   grid-column: 3/10;
   grid-row:2;
+
+}
+
+.nav ul{
+  display: grid;
+  grid-template-columns: repeat(3,33%);
+  list-style-type: none;
 }
 
 .nav ul li {
@@ -69,7 +89,9 @@
   grid-column: 3/10;
   grid-row:3/10;
   display:grid;
-  grid-template-columns: repeat(6, 16.67%); /*this needs to be changed to be dynamic*/
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /*this needs to be changed to be dynamic*/
+  overflow: auto;
+  gap: 10px;
 }
 
 .article p {
@@ -83,6 +105,8 @@
   background-color: #FFFFFF;
   color: black;
   text-align: center;
+  width: 200px;
+  height: 200px;
 }
 
 .card p {
